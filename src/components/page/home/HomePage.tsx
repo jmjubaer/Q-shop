@@ -1,13 +1,9 @@
-import { Outlet } from "react-router-dom";
-import Navbar from "../../shered/Navbar";
+import Banner from "./Banner";
 
 const HomePage = () => {
     return (
         <div>
-            <Navbar />
-            <div className='min-h-screen'>
-                <Outlet />
-            </div>
+            <Banner />
         </div>
     );
 };
