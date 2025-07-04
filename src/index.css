@@ -1,1 +1,10 @@
 @import "tailwindcss";
+* {
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    @apply w-[96%] max-w-[1240px] mx-auto;
+}
+.gradient_bg {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+}
