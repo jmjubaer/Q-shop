@@ -5,6 +5,7 @@ import CartProvider from "./context/CartContext.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./components/page/home/HomePage.tsx";
 import App from "./App.tsx";
+import ProductDetails from "./components/page/product/ProductDetails.tsx";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <HomePage />,
+            },
+            {
+                path: "product/:id",
+                element: <ProductDetails />,
             },
         ],
     },

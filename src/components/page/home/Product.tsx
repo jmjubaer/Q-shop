@@ -1,8 +1,5 @@
-import { Rating } from "@smastrom/react-rating";
-import "@smastrom/react-rating/style.css";
-import { IoCartOutline } from "react-icons/io5";
 import { LiaFilterSolid } from "react-icons/lia";
-import { useNavigate } from "react-router-dom";
+import ProductCard from "../../shered/ui/ProductCard";
 
 const products = [
     {
@@ -111,7 +108,6 @@ const products = [
     },
 ];
 const Product = () => {
-    const router = useNavigate();
     return (
         <div className='my-10 container'>
             <div className='flex items-center justify-between'>
@@ -141,45 +137,7 @@ const Product = () => {
             </div>
             <div className='grid grid-cols-4 gap-5 mt-10'>
                 {products.map((product) => (
-                    <div
-                        key={product.id}
-                        onClick={() => router("/")}
-                        className='rounded-xl overflow-hidden shadow-2xl border border-gray-100 cursor-pointer relative'>
-                        <img
-                            src={product.image}
-                            alt='Product image ...'
-                            className='w-full h-48 object-cover'
-                        />
-                        <div className='absolute top-3 left-3 bg-white text-black text-xs font-medium px-2.5 py-1 rounded-full flex items-center gap-1'>
-                            {product.category}
-                        </div>
-                        <div className='p-4 flex flex-col justify-between h-[calc(100%-192px)]'>
-                            <h2 className='text-lg font-medium hover:text-blue-500 transition-all duration-300'>
-                                {product.title}
-                            </h2>
-                            <div className='flex my-1 gap-1'>
-                                <Rating
-                                    style={{ maxWidth: 100 }}
-                                    readOnly
-                                    orientation='horizontal'
-                                    value={product.rating.rate}
-                                />
-                                <p>{product.rating.rate}</p>
-                                <p>({product.rating.count})</p>
-                            </div>
-                            <p className='text-black/70 text-sm mt-2 line-clamp-2'>
-                                {/* {product.description.slice(0, 100)}... */}
-                                {product.description}
-                            </p>
-                            <h3 className='text-2xl font-black my-3'>
-                                ${product.price}
-                            </h3>
-                            <button className='gradient_bg w-full flex items-center text-center justify-center gap-3 z-10 text-white p-2 rounded-md cursor-pointer'>
-                                <IoCartOutline className='text-xl' /> Add to
-                                Cart
-                            </button>
-                        </div>
-                    </div>
+                    <ProductCard key={product.id} product={product} />
                 ))}
             </div>
         </div>
