@@ -1,13 +1,23 @@
 import { LiaFilterSolid } from "react-icons/lia";
 import ProductCard from "../../shered/ui/ProductCard";
-import useGetProducts from "../../../hooks/useGetProducts";
 import type { SetStateAction } from "react";
 import useGetCategories from "../../../hooks/useGetCategory";
 import { Spin } from "antd";
-
-const Product = () => {
-    const { products, setSort, setCategory, loading, setSearch } =
-        useGetProducts();
+import type { TProduct } from "../../../types";
+type TProps = {
+    products: TProduct[];
+    setSort: React.Dispatch<React.SetStateAction<string>>;
+    setCategory: React.Dispatch<React.SetStateAction<string>>;
+    setSearch: React.Dispatch<React.SetStateAction<string>>;
+    loading: boolean;
+};
+const Product = ({
+    products,
+    setSort,
+    setCategory,
+    loading,
+    setSearch,
+}: TProps) => {
     const { category } = useGetCategories();
     console.log(products);
 
@@ -39,7 +49,7 @@ const Product = () => {
                     <select
                         onChange={handleFilter}
                         className='outline-0 w-full p-2 pl-4 pr-6 bg-white border border-gray-200 rounded-md shadow'>
-                        <option value='sd'>All categories</option>
+                        <option value=''>All categories</option>
                         {category?.map((category) => (
                             <option
                                 key={category.category}
@@ -62,7 +72,7 @@ const Product = () => {
                 </div>
             </div>
             <Spin spinning={loading} tip='Loading' size='large'>
-                {products.length > 1 ? (
+                {products.length > 0 ? (
                     <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5 mt-10'>
                         {products.map((product) => (
                             <ProductCard key={product?._id} product={product} />

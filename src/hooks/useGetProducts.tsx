@@ -7,6 +7,8 @@ const useGetProducts = () => {
     const [search, setSearch] = useState("");
     const [category, setCategory] = useState("");
     const [sort, setSort] = useState("a-z");
+    console.log(search);
+    console.log(products);
     useEffect(() => {
         (async () => {
             setLoading(true);
