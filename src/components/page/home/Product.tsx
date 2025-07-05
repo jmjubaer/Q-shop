@@ -1,6 +1,7 @@
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { IoCartOutline } from "react-icons/io5";
+import { LiaFilterSolid } from "react-icons/lia";
 import { useNavigate } from "react-router-dom";
 
 const products = [
@@ -112,8 +113,33 @@ const products = [
 const Product = () => {
     const router = useNavigate();
     return (
-        <div className=''>
-            <div className='grid grid-cols-3 gap-5 container mt-10'>
+        <div className='my-10 container'>
+            <div className='flex items-center justify-between'>
+                <div className='flex items-center gap-2 font-medium'>
+                    <LiaFilterSolid className=' text-xl' /> <p>Filter & Sort</p>
+                </div>
+                <div className='flex items-center gap-5'>
+                    <select
+                        name=''
+                        id=''
+                        className='outline-0 p-2 pl-4 pr-6 bg-white border border-gray-200 rounded-md shadow'>
+                        <option value=''>All categories</option>
+                        <option value='Electronics'>Electronics</option>
+                        <option value='Electronics'>Electronics</option>
+                        <option value='Accessories'>Accessories</option>
+                    </select>
+                    <select
+                        name=''
+                        id=''
+                        className='outline-0 p-2 pl-4 pr-6 bg-white border border-gray-200 rounded-md shadow'>
+                        <option value=''>All categories</option>
+                        <option value='Electronics'>Electronics</option>
+                        <option value='Electronics'>Electronics</option>
+                        <option value='Accessories'>Accessories</option>
+                    </select>
+                </div>
+            </div>
+            <div className='grid grid-cols-4 gap-5 mt-10'>
                 {products.map((product) => (
                     <div
                         key={product.id}
@@ -127,7 +153,7 @@ const Product = () => {
                         <div className='absolute top-3 left-3 bg-white text-black text-xs font-medium px-2.5 py-1 rounded-full flex items-center gap-1'>
                             {product.category}
                         </div>
-                        <div className='p-4'>
+                        <div className='p-4 flex flex-col justify-between h-[calc(100%-192px)]'>
                             <h2 className='text-lg font-medium hover:text-blue-500 transition-all duration-300'>
                                 {product.title}
                             </h2>
@@ -141,8 +167,9 @@ const Product = () => {
                                 <p>{product.rating.rate}</p>
                                 <p>({product.rating.count})</p>
                             </div>
-                            <p className='text-black/70 text-sm mt-2'>
-                                {product.description.slice(0, 100)}...
+                            <p className='text-black/70 text-sm mt-2 line-clamp-2'>
+                                {/* {product.description.slice(0, 100)}... */}
+                                {product.description}
                             </p>
                             <h3 className='text-2xl font-black my-3'>
                                 ${product.price}
