@@ -9,7 +9,7 @@ interface TRating {
 }
 
 export interface TProduct {
-    id: number;
+    _id: string;
     title: string;
     price: number;
     description: string;

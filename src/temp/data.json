@@ -1,0 +1,199 @@
+[
+    {
+        "title": "Wireless Bluetooth Headphones",
+        "price": 79.99,
+        "description": "Premium quality wireless headphones with noise cancellation and 30-hour battery life. Perfect for music lovers and professionals.",
+        "category": "Electronics",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733172/photo-1505740420928-5e560c06d30e_nheevg.jpg",
+        "rating": { "rate": 4.5, "count": 120 },
+        "specifications": [
+            { "name": "Connectivity", "specification": "Bluetooth 5.0" },
+            { "name": "Battery Life", "specification": "30 hours" },
+            { "name": "Noise Cancellation", "specification": "Active (ANC)" },
+            { "name": "Usage", "specification": "Music, Calls, Gaming" }
+        ]
+    },
+    {
+        "title": "Smart Fitness Watch",
+        "price": 199.99,
+        "description": "Advanced fitness tracking with heart rate monitoring, GPS, and 7-day battery life. Track your workouts and health metrics.",
+        "category": "Electronics",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733171/photo-1523275335684-37898b6baf30_p5my6m.jpg",
+        "rating": { "rate": 4.3, "count": 89 },
+        "specifications": [
+            { "name": "Battery Life", "specification": "7 days" },
+            {
+                "name": "Features",
+                "specification": "Heart Rate, GPS, Sleep Tracking"
+            },
+            { "name": "Water Resistance", "specification": "Up to 50m" },
+            { "name": "Display", "specification": "1.3-inch AMOLED" }
+        ]
+    },
+    {
+        "title": "Minimalist Leather Wallet",
+        "price": 45.0,
+        "description": "Handcrafted genuine leather wallet with RFID blocking technology. Slim design with multiple card slots and bill compartment.",
+        "category": "Accessories",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733175/photo-1627123424574-724758594e93_ias2uv.jpg",
+        "rating": { "rate": 4.8, "count": 156 },
+        "specifications": [
+            { "name": "Material", "specification": "Genuine Leather" },
+            { "name": "Security", "specification": "RFID Blocking" },
+            { "name": "Design", "specification": "Slim & Minimalist" },
+            {
+                "name": "Capacity",
+                "specification": "6 Card Slots + 1 Bill Pocket"
+            }
+        ]
+    },
+    {
+        "title": "Portable Phone Charger",
+        "price": 29.99,
+        "description": "10000mAh power bank with fast charging technology. Compatible with all devices and includes multiple charging ports.",
+        "category": "Electronics",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733175/photo-1609091839311-d5365f9ff1c5_scddyq.jpg",
+        "rating": { "rate": 4.2, "count": 203 },
+        "specifications": [
+            { "name": "Capacity", "specification": "10000mAh" },
+            { "name": "Ports", "specification": "USB-A, USB-C" },
+            { "name": "Charging", "specification": "Fast Charging Support" },
+            { "name": "Compatibility", "specification": "Universal" }
+        ]
+    },
+    {
+        "title": "Ergonomic Office Chair",
+        "price": 299.99,
+        "description": "Professional office chair with lumbar support, adjustable height, and breathable mesh back. Perfect for long work sessions.",
+        "category": "Furniture",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733173/photo-1586023492125-27b2c045efd7_ilfpxm.jpg",
+        "rating": { "rate": 4.6, "count": 74 },
+        "specifications": [
+            { "name": "Back Support", "specification": "Lumbar Support" },
+            { "name": "Material", "specification": "Mesh and Steel Frame" },
+            { "name": "Adjustability", "specification": "Height and Tilt" },
+            { "name": "Usage", "specification": "Office / Home Workstation" }
+        ]
+    },
+    {
+        "title": "Stainless Steel Water Bottle",
+        "price": 24.99,
+        "description": "Insulated stainless steel water bottle that keeps drinks cold for 24 hours or hot for 12 hours. Leak-proof and eco-friendly.",
+        "category": "Lifestyle",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733173/photo-1602143407151-7111542de6e8_miroip.jpg",
+        "rating": { "rate": 4.7, "count": 312 },
+        "specifications": [
+            { "name": "Material", "specification": "Stainless Steel" },
+            { "name": "Insulation", "specification": "Hot 12h / Cold 24h" },
+            { "name": "Leak-proof", "specification": "Yes" },
+            { "name": "Capacity", "specification": "750ml" }
+        ]
+    },
+    {
+        "title": "Wireless Charging Pad",
+        "price": 39.99,
+        "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design with LED indicator and overheating protection.",
+        "category": "Electronics",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733174/photo-1627123424574-72475dfg8594e93_tcwie8.avif",
+        "rating": { "rate": 4.1, "count": 95 },
+        "specifications": [
+            {
+                "name": "Charging Type",
+                "specification": "Wireless Fast Charging"
+            },
+            { "name": "Compatibility", "specification": "Qi-enabled Devices" },
+            { "name": "Design", "specification": "Slim with LED Indicator" },
+            {
+                "name": "Protection",
+                "specification": "Overheat & Overcharge Safe"
+            }
+        ]
+    },
+    {
+        "title": "Premium Coffee Beans",
+        "price": 18.99,
+        "description": "Single-origin arabica coffee beans, medium roast. Ethically sourced with notes of chocolate and caramel. Perfect for espresso or drip coffee.",
+        "category": "Food & Beverage",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733172/photo-1559056199-641a0ac8b55e_qpa7dg.jpg",
+        "rating": { "rate": 4.9, "count": 187 },
+        "specifications": [
+            { "name": "Bean Type", "specification": "Arabica" },
+            { "name": "Roast Level", "specification": "Medium" },
+            { "name": "Flavor Notes", "specification": "Chocolate & Caramel" },
+            {
+                "name": "Origin",
+                "specification": "Single-Origin, Ethically Sourced"
+            }
+        ]
+    },
+    {
+        "title": "Noise-Cancelling Sleep Mask",
+        "price": 34.99,
+        "description": "Comfortable memory foam sleep mask with built-in Bluetooth speakers and active noise cancellation. Ideal for travel or relaxation.",
+        "category": "Lifestyle",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733174/photo-1627123424574-df72475dfg8594e93_ppim0w.avif",
+        "rating": {
+            "rate": 4.4,
+            "count": 98
+        },
+        "specifications": [
+            { "name": "Material", "specification": "Memory Foam & Cotton" },
+            { "name": "Noise Cancellation", "specification": "Active" },
+            { "name": "Bluetooth", "specification": "Built-in speakers" },
+            { "name": "Battery Life", "specification": "10 hours" }
+        ]
+    },
+    {
+        "title": "4K Action Camera",
+        "price": 149.99,
+        "description": "Rugged waterproof 4K action camera with wide-angle lens, WiFi connectivity, and multiple mounting accessories for adventure recording.",
+        "category": "Electronics",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733173/4K-Action-Camera_t0hpap.avif",
+        "rating": {
+            "rate": 4.6,
+            "count": 134
+        },
+        "specifications": [
+            { "name": "Resolution", "specification": "4K UHD" },
+            { "name": "Waterproof", "specification": "Up to 30m with case" },
+            { "name": "Lens", "specification": "170° Wide-Angle" },
+            { "name": "Connectivity", "specification": "WiFi, HDMI" }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "LED Desk Lamp with USB Charging",
+        "price": 59.99,
+        "description": "Dimmable LED desk lamp with adjustable arm and built-in USB charging port. Perfect for workspaces and study areas.",
+        "category": "Furniture",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733731/photo-1560074557-d54ddce534f7_rezqpr.avif",
+        "rating": {
+            "rate": 4.5,
+            "count": 142
+        },
+        "specifications": [
+            { "name": "Lighting", "specification": "LED, Dimmable" },
+            { "name": "Features", "specification": "Adjustable Arm, USB Port" },
+            { "name": "Material", "specification": "Aluminum + ABS" },
+            { "name": "Usage", "specification": "Office, Home, Study" }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Ultra-Soft Throw Blanket",
+        "price": 32.5,
+        "description": "Cozy and breathable microfiber throw blanket for all-season comfort. Ideal for living rooms, beds, or travel.",
+        "category": "Lifestyle",
+        "image": "https://res.cloudinary.com/dykcsfdvi/image/upload/v1751733730/photo-1636545781231-b0d358a443bb_azdndl.avif",
+        "rating": {
+            "rate": 4.7,
+            "count": 215
+        },
+        "specifications": [
+            { "name": "Material", "specification": "Microfiber Fleece" },
+            { "name": "Size", "specification": "50 x 60 inches" },
+            { "name": "Care", "specification": "Machine Washable" },
+            { "name": "Season", "specification": "All-season" }
+        ]
+    }
+]

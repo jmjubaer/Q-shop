@@ -9,7 +9,7 @@ type TProps = {
 const ProductCard = ({ product }: TProps) => {
     return (
         <div
-            key={product.id}
+            key={product._id}
             className='rounded-xl overflow-hidden shadow-md bg-white border border-gray-100 relative'>
             <img
                 src={product.image}
@@ -21,7 +21,7 @@ const ProductCard = ({ product }: TProps) => {
             </div>
             <div className='p-4 flex flex-col justify-between h-[calc(100%-192px)]'>
                 <Link
-                    to={`/product/${product.id}`}
+                    to={`/product/${product._id}`}
                     className='text-lg font-medium hover:text-blue-500 transition-all duration-300'>
                     {product.title}
                 </Link>

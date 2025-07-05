@@ -4,6 +4,7 @@ import AddToCartButton from "../../shered/ui/AddToCartButton";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import ProductCard from "../../shered/ui/ProductCard";
+import { useEffect } from "react";
 const product = {
     id: 1,
     title: "Wireless Bluetooth Headphones",
@@ -151,9 +152,12 @@ const products = [
 ];
 const ProductDetails = () => {
     const router = useNavigate();
+    useEffect(() => {
+        window.scroll(0, 1);
+    }, []);
     return (
         <>
-            <div className='container grid grid-cols-2 gap-10 my-10'>
+            <div className='container grid lg:grid-cols-2 gap-7 my-10'>
                 <div className=''>
                     <img
                         src={product.image}
@@ -180,7 +184,7 @@ const ProductDetails = () => {
                     </div>
                     <div className=''>
                         {product.specifications.map((specification) => (
-                            <div className='flex items-center gap-3 my-1'>
+                            <div className='flex items-center flex-wrap gap-3 my-1'>
                                 <h3 className='text-lg font-medium'>
                                     {specification.name}:
                                 </h3>
@@ -193,19 +197,19 @@ const ProductDetails = () => {
                     </h3>
                     <h3 className='font-medium text-lg'>Description:</h3>
                     <p className='mb-5'>{product.description}</p>
-                    <div className='grid grid-cols-2 gap-3'>
+                    <div className='grid sm:grid-cols-2 gap-3'>
                         <button
-                            className='flex items-center justify-center gap-5 border rounded-md border-gray-300 bg-white cursor-pointer'
+                            className='flex items-center justify-center gap-5 border rounded-md border-gray-300 py-2 bg-white cursor-pointer'
                             onClick={() => router("/")}>
                             <FaArrowLeftLong /> Back to shopping
                         </button>
-                        <AddToCartButton />
+                        <AddToCartButton product={product} />
                     </div>
                 </div>
             </div>
             <div className='container'>
-                <h2 className="text-3xl font-semibold">Related Products</h2>
-                <div className='grid grid-cols-4 gap-5 mt-5'>
+                <h2 className='text-3xl font-semibold'>Related Products</h2>
+                <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5 mt-5'>
                     {products.map((product) => (
                         <ProductCard key={product.id} product={product} />
                     ))}

@@ -1,7 +1,9 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import { useCart } from "../../hooks/useCart";
 
 const Navbar = () => {
+    const { cartItems } = useCart();
     return (
         <div className=' py-3  sticky top-0 bg-white z-20 shadow-md'>
             <div className='container flex items-center justify-between'>
@@ -26,10 +28,16 @@ const Navbar = () => {
                                 Home
                             </NavLink>
                         </li>
-                        <li>
+                        <li className='w-fit h-fit relative'>
                             <button className='p-3 hover:bg-gray-100 rounded-md text-xl cursor-pointer'>
                                 <FaShoppingCart />
                             </button>
+                            <p className="bg-red-500 w-5 h-5 absolute top-0 right-0 flex items-center justify-center rounded-full text-white text-sm">
+                                <span className=''>
+                                    {/* Todo: use reducer function */}
+                                    {cartItems?.length}
+                                </span>
+                            </p>
                         </li>
                     </ul>
                 </nav>
