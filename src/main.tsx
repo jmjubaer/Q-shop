@@ -6,6 +6,7 @@ import HomePage from "./components/page/home/HomePage.tsx";
 import App from "./App.tsx";
 import ProductDetails from "./components/page/product/ProductDetails.tsx";
 import CartProvider from "./provider/CartProvider.tsx";
+import { Toaster } from "sonner";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
         <CartProvider>
+             <Toaster />
             <RouterProvider router={router} />
         </CartProvider>
     </StrictMode>
